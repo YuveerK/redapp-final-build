@@ -1,0 +1,19 @@
+.sDate
+{
+    width: 440px;
+}
+
+.eDate
+{
+    width: 440px;
+}
+
+body
+{
+    text-align: center;
+}
+
+form
+{
+    display: inline-block;
+}

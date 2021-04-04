@@ -1,0 +1,70 @@
+<html>
+
+    <body>
+    <table class='list'>
+    <thead>
+    <tr>
+        <th class='idno'>ID No.</th>
+        <th class='itemn'>Item</th>
+        <th class='quant'>Quantity</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Chocolate</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Bread</td>
+        <td>99</td>
+    </tr>
+    </tbody>
+    </table>
+
+      <br><br>
+      MY NEW TABLE
+      <table class='list'>
+    <thead>
+    <tr>
+        <th class='idno'>ID No.</th>
+        <th class='itemn'>Item</th>
+        <th class='quant'>Quantity</th>
+
+    </tr>
+    </thead>
+    <tbody id='myNewTableBody'></tbody>
+    </table>
+    <script>
+        var table = document.getElementsByTagName("table")[0];
+        var tbody = table.getElementsByTagName("tbody")[0];
+        tbody.onclick = function (e) {
+            e = e || window.event;
+            var data = [];
+            var target = e.srcElement || e.target;
+            while (target && target.nodeName !== "TR") {
+                target = target.parentNode;
+            }
+            if (target) {
+                var cells = target.getElementsByTagName("td");
+                for (var i = 0; i < cells.length; i++) {
+                    data.push(cells[i].innerHTML);
+                }
+            }
+            var trnode = document.createElement("tr");
+          
+            for(var i = 0; i < data.length; i++){
+                var tdnode = document.createElement("td");
+                var textnode = document.createTextNode(data[i]);
+                tdnode.appendChild(textnode);
+                trnode.appendChild(tdnode);
+            }
+          
+            document.getElementById("myNewTableBody").appendChild(trnode);
+            alert(data);
+    };
+    </script>
+    </body>
+    </html>

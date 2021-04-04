@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    
+  }
+body{
+    /* background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 52%, rgba(255,190,193,0.9822129535407913) 84%);  */
+}  
+
+p{
+    font-family: barlow semi condensed,sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #888;
+    font-weight: 400;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar .nav-item{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand{
+
+    color: #fff;
+    font-size: 50px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #EEE !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #eb4d4b !important;
+}
+nav .signup{
+    background: none;
+    color: black;
+    padding: 11px 50px;
+    border-radius: 21px;
+    border: 1px solid #eb4d4b;
+}
+
+nav .signup:hover{
+    background-color: #feae96;
+    background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+    color: #EEE;
+}
+
+.main-menu{
+    background: Url('img/banner_bg.png');
+    background-repeat: no-repeat;
+    background-size: 67% 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.features{
+    padding:50px 0 ;
+}
+
+.about{
+    padding: 50px 0;
+}
+
+.header .banner{
+    margin-top: 60px;
+}
+.header .info{
+    margin-top: 270px;
+    margin-left: 100px;
+}
+.header .info h1{
+    font-size: 55px;
+    font-weight: bold;
+    
+}
+
+.about p{
+    margin-bottom: 20px;
+}
+.about button{    
+    background: #eb4d4bed;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 21px;
+    border: 1px solid #eb4d4b;
+}
+
+.about button:hover{
+    background-color:white;
+    color: #eb4d4bed;
+}
+
+.about .pict img{
+    width: 475px;
+    height: 435px;
+}
+
+.price img{
+    width: 80px;
+    height: 85px;
+    margin: 25px auto;
+}
+.price h5{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.price h5 span{
+    color: #888;
+    font-size: 14px;
+}
+
+
+.price .card ul li{
+    font-size: 14px;
+    color: #7f7f7f;
+    text-transform: capitalize;
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+}
+
+.reveiw-part{
+    padding: 50px;
+}
+
+.reveiw-part .carousel{
+    height: 430px;
+}
+
+.reveiw-part .carousel .carousel-indicators li{
+    background-color: #eb4d4b;
+    height: 5px;
+}
+.reveiw-part .review-info{
+
+    margin-top: 100px;
+}
+
+
+.reveiw-part .review-info h2{
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 55px;
+    margin-bottom: 28px;
+    
+}
+
+.reveiw-part .review-img img{
+    width: 500px;
+}
+
+.review-info p{
+    margin-bottom: 30px;
+}
+
+.review-info h3 span{
+    font-size: 70%;
+    color: #888;
+    font-weight: 400;
+}
+
+.sub h2{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 55px;
+    
+}
+.sub input[type='email']{
+    margin-left: 172px;
+    width: 670px;
+    padding: 12px;
+    margin-top: 30px;
+    color: #ccc;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.sub input[type='button']{
+    background: #eb4d4b;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    width: 140px;
+    font-size: 18px;
+    height: 65px;
+    border: none;
+    display: block;
+}
+
+.client-logo{
+    padding: 100px 0;
+}
+
+.client-logo .c-logo{
+    margin-bottom: 30px;
+}
+
+footer{
+    background-image: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    height: 370px;
+}
+
+#redapp-logo{
+    height: 50px;
+}
+
+footer li a{
+    color: #888;
+    font-size: 14px;
+}
+footer li a:hover{
+    color: #eb4d4b;
+}
+
+.vis-nav{
+    background-color: #FF0000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    z-index: 9999999;
+}
+
+.vis-nav .signup{
+
+    background: #eee;
+    color: black;
+    padding: 11px 50px;
+    border-radius: 21px;
+    border: 1px solid #fff;
+}
+
+.vis-nav .signup:hover{
+    background-color: #eb4d4b;
+    color: #EEE;
+}
+
+@media only screen and (max-width: 991px) {
+    .info{
+        margin-top: 0 !important;
+    }
+
+    .features{
+        margin-top: 0px;
+    }
+    .features p{
+        margin-bottom: 20px;
+    }
+
+    .about button{
+        margin-bottom: 50px;
+    }
+
+    
+    .reveiw-part .review-img img{
+        width: 400px;
+    }
+
+    .reveiw-part .carousel{
+        height:520px ;
+    }
+
+    .sub input[type='email']{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sub input[type='button']{
+        margin:15px auto;
+    }
+
+    .client-logo img{
+        display: block;
+        margin: 30px auto;
+    }
+
+    footer{
+        background-image: none;
+        background-color: #f7f7f7;
+        height: 1000px;
+    }
+}
